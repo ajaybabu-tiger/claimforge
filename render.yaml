@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: claimforge
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    region: oregon
+    healthCheckPath: /health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: AI_PROVIDER
+        value: rule_based
+      - key: STORAGE_MODE
+        value: local

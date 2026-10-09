@@ -1,0 +1,50 @@
+# Python virtual environment & caches
+venv/
+.venv/
+env/
+ENV/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+**/.pytest_cache/
+
+# Databases & local storage
+*.db
+*.db-journal
+*.sqlite3
+backend/uploads/*.pdf
+backend/uploads/*.png
+backend/uploads/*.jpg
+backend/uploads/*.jpeg
+backend/uploads/*.webp
+!backend/uploads/fixtures/
+uploads/*.pdf
+uploads/*.png
+uploads/*.jpg
+
+# Node.js & Next.js
+node_modules/
+**/node_modules/
+.next/
+**/.next/
+out/
+build/
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Deployment zip outputs
+*.zip
+
+# Environment local overrides (preserve .env.example)
+.env.local
+.env.*.local
+
+# Operating System & IDEs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
